@@ -1,0 +1,10 @@
+:root {
+    --text: #e1e5ea;
+    --background: #111418;
+    --primary: #76759f;
+    --secondary: #1c1721;
+    --tertiary: #1C1F23;
+    --accent: #584766;
+    --text-font: 'Open Sans', sans-serif;
+    --text-header: 'Oswald', sans-serif;
+}
