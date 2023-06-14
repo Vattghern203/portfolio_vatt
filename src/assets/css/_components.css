@@ -9,6 +9,7 @@
 }
 
 .tech {
+    align-self: center;
     min-width: 24rem;
     width: calc(16rem + 5vw);
     height: 26rem;
