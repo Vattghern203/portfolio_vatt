@@ -33,8 +33,7 @@ body {
 .navigation__link:link,
 .navigation__link:visited {
     color: var(--text);
-    font-weight: 600;
-    isolation: isolate;
+    backface-visibility: hidden;
 }
 
 .navigation__link:hover {
