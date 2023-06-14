@@ -31,7 +31,7 @@ body {
 
 .navigation__link:link,
 .navigation__link:visited {
-    color: var(--primary);
+    color: var(--text);
     font-weight: 600;
     isolation: isolate;
 }
@@ -46,23 +46,27 @@ body {
 
 /* MAIN */
 
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--primary);
+}
+
 
 /* Wrapper */
-
-.wrapper {
-    padding: clamp(6.4rem, 15%, 12vw);
-}
 
 .wrapper__content {
     min-height: 80vh;
     padding: 4.8rem 8rem;
     border-radius: 1.6rem;
-    margin: 6.4rem auto;
 }
+.wrapper__content:not(:first-child) { margin-top: 16rem;;}
 
-.wrapper .wrapper__content:nth-child(even) {
+.wrapper__content:nth-child(even) {
     background-color: var(--secondary);
 }
+
+.wrapper__content:nth-child(odd) { background-color: var(--tertiary); }
 
 /* FOOTER */
 
