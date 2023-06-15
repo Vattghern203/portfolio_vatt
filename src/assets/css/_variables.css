@@ -1,4 +1,5 @@
 :root {
+    /* Colors */
     --text: #e1e5ea;
     --background: #111418;
     --primary: #76759f;
@@ -7,4 +8,12 @@
     --accent: #584766;
     --text-font: 'Open Sans', sans-serif;
     --text-header: 'Inter', sans-serif;
+    /* Spacing */
+    --xs-spacing: .8rem;
+    --sm-spacing: 1.6rem;
+    --md-spacing: 3.2rem;
+    --lg-spacing: 6.4rem;
+    --xl-spacing: 12.8rem;
+    --2xl-spacing: 25.6rem;
+    --3xl-spacing: 51.2rem;
 }
