@@ -54,4 +54,14 @@
     transform: scale(20);
 }
 
+/* Contact */
+.contact__btn {
+    background-color: var(--accent);
+    padding: .6rem 1.4rem;
+    border-radius: 1.2rem;
+}
+
+.contact__btn:hover { opacity: .8;}
+
+
 /* Scroll Bar */
