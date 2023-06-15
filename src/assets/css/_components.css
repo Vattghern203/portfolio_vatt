@@ -1,17 +1,19 @@
 /* TECH */
 .tech__wrapper {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 3.2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    max-width: 89rem;
 }
 
 .tech {
+    font-family: var(--text-header);
     align-self: center;
-    min-width: 24rem;
-    width: calc(16rem + 5vw);
+    width: calc(16rem + 8vw);
+    max-width: 26rem;
     height: 26rem;
     border: solid var(--accent) .2rem;
     border-radius: .8rem;
@@ -19,12 +21,10 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    text-align: left;
 }
 
 .tech__title {
     color: var(--text);
-    margin-top: 1.25em;
 }
 
 .tech__spanner {
@@ -37,7 +37,7 @@
     top: 0;
     right: 0;
     transform: translate(1.8rem, -2rem);
-    transition: all .8s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all .4s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .tech__icon {
@@ -48,7 +48,7 @@
     left: 0;
     fill: var(--text);
     transform: translate(-1.65rem, 1.65rem);
-    transition: all .8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     backface-visibility: hidden;
     transform-origin: left bottom;
 }
