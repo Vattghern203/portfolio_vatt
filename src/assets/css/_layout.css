@@ -13,6 +13,14 @@ body {
     justify-content: space-around;
     align-items: center;
     z-index: 5;
+
+    animation: fromTop 4s 1;
+
+    transition: transform, opacity .8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.header * {
+    backface-visibility: hidden;
 }
 
 .navigation {
@@ -83,6 +91,12 @@ body {
 
 .wrapper__content:nth-child(odd) { background-color: var(--tertiary); }
 
+.content__text {
+    font-size: 1.75rem;
+    margin-block: 2em;
+    margin-inline: 4em;
+}
+
 
 /* TECH */
 .section__tech {
@@ -111,4 +125,6 @@ body {
 .footer {
     width: 100%;
     padding: 6.4rem;
+    display: grid;
+    place-items: center;
 }

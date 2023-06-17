@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script defer src="src/assets/js/observer.js"></script>
     <link rel="stylesheet" href="src/assets/css/main.css">
     <title>Otávio Augusto | Portfolio</title>
 </head>
@@ -24,6 +25,7 @@
                 </li>
                 <li class="navigation__item">
                     <a href="" class="navigation__link">Github</a>
+                    <span class="navigation__span"></span>
                 </li>
                 <li class="navigation__item">
                     <a href="" class="navigation__link">Linkedin</a>
@@ -39,24 +41,32 @@
 
         <div class="hero">
             <div class="hero__text">
-                <h1>Hello, I'm Otávio Augusto</h1>
-                <p>A front-end dev.</p>
+                <h1 class="hero__title">Hello, I'm <span class="hero__span">Otávio Augusto</span></h1>
+                <p class="hero__subtitle">A front-end dev.</p>
             </div>
         </div>
 
         <section class="wrapper__content">
-            <h2 class="content__heading">
+            <h2 class="content__heading hidden" data-animation="fade-in">
                 Who am I
             </h2>
+
+            <article class="content__article hidden" data-animation="slide-in-right">
+                <p class="content__text">I'm a Computer Science student on IF Sul de Minas - Campus Muzambinho</p>
+
+                <p class="content__text">In this course I got fascinated with front-end development, specially with pure CSS</p>
+
+                <p class="content__text"></p>
+            </article>
         </section>
         <section class="wrapper__content">
-            <h2 class="content__heading">
-                lorem
+            <h2 class="content__heading hidden" data-animation="fade-in">
+                Some of my projects
             </h2>
 
         </section>
         <section class="wrapper__content section__tech">
-            <h2 class="content__heading">
+            <h2 class="content__heading hidden" data-animation="fade-in">
                 My Techs
             </h2>
 
@@ -141,7 +151,7 @@
             </div>
         </section>
         <section class="wrapper__content">
-            <h2 class="content__heading">
+            <h2 class="content__heading hidden" data-animation="fade-in">
                 Who am I
             </h2>
         </section>
@@ -162,6 +172,10 @@
                 <a href="" class="footer__link"></a>
             </li>
         </ul>
+
+        <div class="footer__text">
+            <h5>Developed with ❤ by Otávio Augusto.</h5>
+        </div>
     </footer>
     
 </body>
