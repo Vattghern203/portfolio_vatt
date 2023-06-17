@@ -50,3 +50,10 @@
         background-position-y: center;
     }
 }
+
+.wave-up {
+    animation-name: waveUp;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+}

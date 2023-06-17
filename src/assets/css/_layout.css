@@ -108,14 +108,10 @@ body {
 
 /* About */
 .about {
-    background-image: url(..//img/layered-waves-haikei.svg);
+    background-image: url(../img/layered-waves-haikei.svg);
     background-size: cover;
     background-repeat: no-repeat;
     transform-origin: bottom;
-    animation-name: waveUp;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-duration: 6s;
     box-shadow: 0 0 0 0 var(--secondary);
     transition: all .2s ease-in;
 }
