@@ -41,7 +41,6 @@ body {
 .navigation__link:link,
 .navigation__link:visited {
     color: var(--text);
-    backface-visibility: hidden;
 }
 
 .navigation__link:hover:not(.contact__btn) {
@@ -60,36 +59,46 @@ body {
     ) 10%, rgba(0, 0, 0, 0.904)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
+    padding: 0 var(--md-spacing);
 }
 
 .hero__text {
-    margin-bottom: 8rem;
-    backface-visibility: hidden;
+    margin-bottom: var(--lg-spacing);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--xs-spacing);
 }
 
-.hero__text h1 {
+.hero__title {
     font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: -.1rem;
     font-family: var(--text-header);
-    color: var(--primary);
     animation: fadeIn 6.4s 1;
     transition: opacity .2s ease-in;
 }
 
-.hero__text p {
+.hero__span {
+    background-image: linear-gradient(120deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero__subtitle {
     font-family: var(--text-font);
     animation: fromBottom 4s;
     transition: transform, opacity .4s cubic-bezier(1, 0, 0, 1);
 }
-
 
 /* Wrapper */
 
 .wrapper__content {
     min-height: 100vh;
     padding: 12.8rem;
+    margin-block: 64rem;
+    border: white 2px solid;
 }
-
-.wrapper__content:nth-child(odd) { background-color: var(--tertiary); }
 
 .content__text {
     font-size: 1.75rem;
@@ -97,6 +106,19 @@ body {
     margin-inline: 4em;
 }
 
+/* About */
+.about {
+    background-image: url(..//img/layered-waves-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: bottom;
+    animation-name: waveUp;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+    box-shadow: 0 0 0 0 var(--secondary);
+    transition: all .2s ease-in;
+}
 
 /* TECH */
 .section__tech {
@@ -123,8 +145,9 @@ body {
 /* FOOTER */
 
 .footer {
+    border-top: var(--accent) solid .2rem;
     width: 100%;
-    padding: 6.4rem;
+    padding: 64rem;
     display: grid;
     place-items: center;
 }

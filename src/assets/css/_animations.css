@@ -24,10 +24,29 @@
     0% {
         transform: translateY(-10rem);
         opacity: 0;
+        background-color: transparent;
+    }
+
+    99.99% {
+        background-color: transparent;
     }
 
     100% {
         transform: translateY(0rem);
         opacity: 1;
+    }
+}
+
+@keyframes waveUp {
+    0% {
+        background-position-y: 40rem;
+    }
+
+    70% {
+        background-position-y: -8rem;
+    }
+
+    100% {
+        background-position-y: center;
     }
 }
