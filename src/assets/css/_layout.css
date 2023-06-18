@@ -107,13 +107,25 @@ body {
 }
 
 /* About */
-.about {
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position-y: 0%;
     background-image: url(../img/layered-waves-haikei.svg);
     background-size: cover;
     background-repeat: no-repeat;
     transform-origin: bottom;
-    box-shadow: 0 0 0 0 var(--secondary);
-    transition: all .2s ease-in;
+    animation: waveUp 10s infinite forwards;
+}
+
+.about {
+    transition: transform .2s ease-in;
+    position: relative;
 }
 
 /* TECH */

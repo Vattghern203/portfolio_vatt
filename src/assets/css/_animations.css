@@ -38,16 +38,17 @@
 }
 
 @keyframes waveUp {
+
     0% {
-        background-position-y: 40rem;
+        background-position-y: 25%;
     }
 
-    70% {
-        background-position-y: -8rem;
+    50% {
+        background-position-y: -25%;
     }
 
     100% {
-        background-position-y: center;
+        background-position-y: 25%;
     }
 }
 
@@ -55,5 +56,9 @@
     animation-name: waveUp;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-duration: 6s;
+    animation-duration: 4s;
+}
+
+#wave-01 {
+    transform: scale(3);
 }
