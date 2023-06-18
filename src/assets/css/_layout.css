@@ -107,6 +107,10 @@ body {
 }
 
 /* About */
+.about {
+    transition: transform .8s ease-in-out;
+    position: relative;
+}
 
 .about::before {
     content: "";
@@ -115,18 +119,13 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-position-y: 0%;
     background-image: url(../img/layered-waves-haikei.svg);
-    background-size: cover;
     background-repeat: no-repeat;
-    transform-origin: bottom;
-    animation: waveUp 10s infinite forwards;
+    background-size: cover;
+    animation: waveUp 12s infinite both linear;
+    backface-visibility: hidden;
 }
 
-.about {
-    transition: transform .2s ease-in;
-    position: relative;
-}
 
 /* TECH */
 .section__tech {
