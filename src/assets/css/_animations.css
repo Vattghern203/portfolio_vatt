@@ -10,7 +10,7 @@
 
 @keyframes fromBottom {
     0% {
-        transform: translateY(10rem);
+        transform: translateY(100%);
         opacity: 0;
     }
 
@@ -22,7 +22,7 @@
 
 @keyframes fromTop {
     0% {
-        transform: translateY(-10rem);
+        transform: translateY(-100%);
         opacity: 0;
         background-color: transparent;
     }
