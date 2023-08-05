@@ -52,13 +52,13 @@
     }
 }
 
+#wave-01 {
+    animation: waveUp .2s infinite ease-in-out;
+} 
+
 .wave-up {
     animation-name: waveUp;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 4s;
-}
-
-#wave-01 {
-    transform: scale(3);
 }

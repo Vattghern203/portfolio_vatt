@@ -97,7 +97,6 @@ body {
     min-height: 100vh;
     padding: 12.8rem;
     margin-block: 64rem;
-    border: white 2px solid;
 }
 
 .content__text {
@@ -106,27 +105,21 @@ body {
     margin-inline: 4em;
 }
 
+.content__article {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8vmin;
+    margin-top: 4vmin;
+}
+
 /* About */
 .about {
     transition: transform .8s ease-in-out;
-    position: relative;
-}
-
-.about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(../img/layered-waves-haikei.svg);
-    background-repeat: no-repeat;
-    background-position-y: clamp(5%, 25%, 50%);
+    background-image: url(../img/waves.svg);
     background-size: cover;
-    background-position: center;
-    animation: waveUp 8s infinite both linear;
-    backface-visibility: hidden;
-    transition: all .2s ease-in;
+    background-position-y: calc(10% + 10vw);
+    background-repeat: no-repeat;
+    
 }
 
 
@@ -156,8 +149,8 @@ body {
 
 .footer {
     border-top: var(--accent) solid .2rem;
-    width: 100%;
-    padding: 64rem;
     display: grid;
     place-items: center;
+    justify-content: center;
+    height: 40vh;
 }

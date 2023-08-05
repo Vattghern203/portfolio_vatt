@@ -1,5 +1,5 @@
 body {
-    font-size: 2.5rem;
+    font-size: calc(1rem + 1vh);
     color: var(--text);
     line-height: 1.6;
     font-family: var(--text-font);
@@ -19,9 +19,12 @@ h1, h2, h3, h4, h5 {
 
 /* CONTENT */
 .content__heading {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
+.about__p {
+    font-weight: 500;
+}
 
 /* TECH SECTION */
 .tech__title {
