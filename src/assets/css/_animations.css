@@ -52,13 +52,30 @@
     }
 }
 
-#wave-01 {
-    animation: waveUp .2s infinite ease-in-out;
-} 
+@keyframes waves {
+    0% {
+        bottom: -50%;
+        left: -25%;
+    }
+
+    50% {
+        bottom: 0;
+        left: 0;
+    }
+
+    100% {
+        bottom: -50%;
+        right: 25%;
+    }
+}
 
 .wave-up {
     animation-name: waveUp;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 4s;
+}
+
+#wave-01_2, #wave-02 {
+    animation: waves 4s infinite ease;
 }
